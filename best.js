@@ -1,3 +1,5 @@
+// TO HANDLE DOWNLOAD
+
 const downloadBtn  = document.getElementById('download-btn');
 
 downloadBtn.addEventListener('click', () => {
@@ -31,4 +33,30 @@ downloadCv.addEventListener('click', () => {
   };
 });
 
-const contactForm = document.getElementById('contact-form')
+
+// TO HANDLE MESSAGE
+
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const formData = new formData(contactForm);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const phone = formData.get('phone');
+  const message = formData.get('message');
+
+  fetch('/contact', {
+    method: 'POST',
+    headers: {
+      'content-Type': 'application/json',
+    },
+  body:JSON.stringify({name, email, phone, message }),
+})
+
+.then((res) => res.json())
+.then((data) => console.log(data))
+.catch((error) => console.error(error));
+
+});
