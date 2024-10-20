@@ -5,7 +5,7 @@ const downloadBtn  = document.getElementById('download-btn');
 downloadBtn.addEventListener('click', () => {
   const link = document.createElement('a');
   link.href = './resume/My resume updated-001.pdf';
-  // link.download = 'My resume updated-001.pdf';
+
   link.click();
 
   try {
