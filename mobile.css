@@ -1,0 +1,83 @@
+@media(max-width: 500px) {
+  .main_body img {
+     display: none;
+  }
+
+  .main_body{
+    align-content: center;
+    font-size: medium;
+    justify-items: center;
+    font-size: small;
+    padding-left: 30px;
+  }
+
+  .navbar--1 {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+
+  }
+  
+  .exp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .exp-1 h1 p
+  {
+    font-size: 100px;
+  }
+
+  .do {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 1.5px;
+  }
+  .transform {
+    align-items: center;
+    margin-bottom: 1.5px;
+  }
+
+  .cards {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about{
+    display: block;
+  }
+  
+  .abt_img {
+    display: none;
+  }
+  .abt {
+    align-items: center;
+    padding-left: 30px;
+    justify-content: center;
+  }
+  .connect {
+    display: block;
+    width: 100%;
+  }
+
+  .contact_me {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .connect,.contact_input {
+    display: block;
+    /* margin-bottom: 100px; */
+  }
+
+ 
+
+  #message {
+    width: 100%;
+  }
+}

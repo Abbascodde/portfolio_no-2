@@ -6,12 +6,13 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./best.css">
+  <link rel="stylesheet" href="mobile.css">
   <title>Best</title>
 </head>
 <body class="bg-[#fdfdfd]">
 
-  <div class="navbar static">
-    <div class="navbar-start">
+  <div class="navbar--1">
+    <div class="">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg
@@ -41,28 +42,28 @@
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li class="text-xl"><a>Home</a></li>
+        <li class="text-xl"><a href="#home">Home</a></li>
         <li>
           <details>
-            <summary class="text-xl">About</summary>
+            <summary class="text-xl"><a href="#about"></a>About</summary>
             <ul class="p-2">
               <li class="text-xl"><a>Services</a></li>
               <li class="text-xl"><a>Portfolio</a></li>
             </ul>
           </details>
         </li>
-        <li><a class="text-xl">Contact</a></li>
+        <li><a href="#contact" class="text-xl">Contact</a></li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a id="cv" class="btn bg-white">Download CV</a>
+    <div class="">
+      <a id="cv" class="btn bg-white mt-2">Download CV</a>
     </div>
   </div>
 
   <!-- Body -->
 
   <div class="bg-[#d8dde4] main_body align-middle flex mt-7 justify-around rounded-sm">
-      <div class="mt-[23%] text-black">
+      <div class="mt-[23%] text-black sub-1">
         <h1 class="font-bold text-4xl mb-5">Hello, i'm <br>Abbas Taofeeq</h1>
         <p class="font-serif text-lg">I'm a software engineer with experience on the use of React.js, <br> HTML5,CSS3,Tailwind CSS,Javascript & UI/UX </p>
     <div class="socio flex gap-4 text-2xl mt-10"> 
@@ -165,12 +166,11 @@
     </div>
   </section>
 <!-- My Experience -->
-
- 
 <!-- About Me Page -->
 
 <section class="about">
   <div class="abt_img">
+    <a href="#about"></a>
      <img src="./images/IMG-20231116-WA0056.jpg" alt="">
   </div>
   <div class="abt">
@@ -186,20 +186,18 @@
    
 </section>
 
+
+
 <section class="connect">
   <div class="contact_me">
   <div class="contact_info pl-3">
     <h2 class="mb-4 text-3xl font-bold underline">Let's Get In Touch</h2>
       <p class="text-xl">For collaborations, inquiries, or just to say hello, please fill out the form below <br> or reach out directly.
        </p>
-
           <p class="svg_1 mt-4"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.72 16.64a1 1 0 1 1 .56 1.92c-.5.146-.86.3-1.091.44c.238.143.614.303 1.136.452C8.48 19.782 10.133 20 12 20s3.52-.218 4.675-.548c.523-.149.898-.309 1.136-.452c-.23-.14-.59-.294-1.09-.44a1 1 0 0 1 .559-1.92c.668.195 1.28.445 1.75.766c.435.299.97.82.97 1.594c0 .783-.548 1.308-.99 1.607c-.478.322-1.103.573-1.786.768C15.846 21.77 14 22 12 22s-3.846-.23-5.224-.625c-.683-.195-1.308-.446-1.786-.768c-.442-.3-.99-.824-.99-1.607c0-.774.535-1.295.97-1.594c.47-.321 1.082-.571 1.75-.766M12 7.5c-1.54 0-2.502 1.667-1.732 3c.357.619 1.017 1 1.732 1c1.54 0 2.502-1.667 1.732-3A2 2 0 0 0 12 7.5" class="duoicon-primary-layer"/><path fill="currentColor" d="M12 2a7.5 7.5 0 0 1 7.5 7.5c0 2.568-1.4 4.656-2.85 6.14a16.4 16.4 0 0 1-1.853 1.615c-.594.446-1.952 1.282-1.952 1.282a1.71 1.71 0 0 1-1.69 0a21 21 0 0 1-1.952-1.282A16.4 16.4 0 0 1 7.35 15.64C5.9 14.156 4.5 12.068 4.5 9.5A7.5 7.5 0 0 1 12 2" class="duoicon-secondary-layer" opacity="0.3"/></svg></a>37 Ibm Haruna Utako FCT</p>
-         
-         
           <p class="svg_2 mt-2"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg></a>abbasyim1@gmail.com</p>
           <p class="svg_3 mt-2"><span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg></span>+234 813-5100-235</p>
-          
-          <p class="font-bold text-[20px] mt-4">Connect With Me</p>
+            <a href="#contact"> <p class="font-bold text-[20px] mt-4">Connect With Me</p> </a>
           <div class="flex gap-5 text-[24px] mt-2"> 
           <a href="https://www.instagram.com/abbastaofeeq_123/?__pwa=1"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><circle cx="17" cy="7" r="1.5" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1.3s" dur="0.15s" values="0;1"/></circle><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="72" stroke-dashoffset="72" d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="72;0"/></path><path stroke-dasharray="28" stroke-dashoffset="28" d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.6s" values="28;0"/></path></g></svg>
           </a>
@@ -208,11 +206,8 @@
           </a>
           <a href="https://www.linkedin.com/in/abbas-taofeeq-olakunle1/">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><circle cx="4" cy="4" r="2" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" dur="0.15s" values="0;1"/></circle><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path stroke-dasharray="12" stroke-dashoffset="12" d="M4 10v10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.15s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M10 10v10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.45s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="24" stroke-dashoffset="24" d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.65s" dur="0.2s" values="24;0"/></path></g></svg>
-          
           </a>
-          
           <a href="https://www.facebook.com/taofeeq.abbas.56">
-          
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>  
           </a>
         </div>
@@ -228,7 +223,7 @@
       <input id="phone" type="phone" name="phone" class="input" placeholder="Your phone-number">
       <textarea id="message" class="textarea textarea-bordered h-24" name="message" id="text" rows="6" cols="50">
       </textarea>
-      <button type="submit" class="bg-[#d8dde4] hover:bg-blue-500 hover:text-white w-[70px] btn glass">SEND</button>
+      <button type="submit" id="submit" class="bg-[#d8dde4] hover:bg-blue-500 hover:text-white w-[70px] btn glass">SEND</button>
     </form>
 </div>
   </div>
@@ -239,7 +234,7 @@
 <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
   <nav class="grid grid-flow-col gap-4">
     <a href="#home" class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
+    <a href="#contact" class="link link-hover">Contact</a>
     <a class="link link-hover">Jobs</a>
     <a class="link link-hover">Press kit</a>
   </nav>

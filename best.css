@@ -1,3 +1,14 @@
+.navbar--1 {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fdfefe;
+  color: #000;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0.1rem;
+}
+
 .first_img{
   object-fit: cover;
   width: 500px;
@@ -133,8 +144,8 @@
   background-color: #d8dde4;
   display: flex;
   color: black;
-  padding: 2rem;
-  overflow: hidden;
+  /* padding: 2rem; */
+  /* overflow: hidden; */
   align-items: center;
   justify-content: center;
   margin-top: 70px;
@@ -144,6 +155,7 @@
   max-width: 830px;
   display: flex;
   align-items: center;
+  /* padding-left: 30px; */
   justify-content: center;
   height: 500px;
   gap: 40px;
